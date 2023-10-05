@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-color: #007FFF;
+    --text: #303030;
+    --white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 4rem;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border-radius: 2rem;
+}
+
+section {
+    max-width: 800px;
+    background-color: var(--bg-color);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+section.data {
+    margin-bottom: 2rem;
+
+}
+
+
+
+.section-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    flex-basis: 200px;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+select {
+    background-color: var(--white);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    font-family: 'Outfit', sans-serif;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--white);
+    color: currentColor;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.data-ticket-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--white);
+    color: var(--text);
+    border-radius: 0.25rem;
+}
+
+.fix {
+    flex: 0 0 150px;
+}
+
+.data-ticket-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}

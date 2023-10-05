@@ -7,14 +7,73 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <input type="text" name="distanza" id="distanza" class="input" />
-    <select name="discount" id="discount" class="select">
-      <option value="0">Minorenne</option>
-      <option value="1">Maggiorenne</option>
-      <option value="2">Over 65</option>
-    </select>
-    <button class="btn-calc">Calcola Prezzo</button>
-    <div class="price">prezzo</div>
+    <main class="main-content">
+      <div class="wrapper">
+        <section class="data">
+          <h2 class="section-title">Calcola il prezzo del tuo biglietto</h2>
+          <div class="section-content">
+            <div class="input-group">
+              <div class="input-container">
+                <label for="nome">Nome e Cognome</label>
+                <input type="text" name="nome" id="nome" class="input" />
+              </div>
+              <div class="input-container">
+                <label for="distanza">Km da percorrere</label>
+                <input
+                  type="text"
+                  name="distanza"
+                  id="distanza"
+                  class="input"
+                />
+              </div>
+              <div class="input-container">
+                <label for="discount">Fascia d'età</label>
+                <select name="discount" id="discount" class="input">
+                  <option value="0">Minorenne</option>
+                  <option value="1" selected>Maggiorenne</option>
+                  <option value="2">Over 65</option>
+                </select>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn-calc">Genera</button>
+              <button class="btn-reset">Annulla</button>
+            </div>
+          </div>
+        
+        </section>
+        <section class="output">
+          <h3 class="section-title">Il tuo biglietto</h2>
+          <div class="section-content">
+            <h4 class="subtitle">Dettagli Passeggero</h4>
+            <ul class="data-ticket-list">
+          
+              <li class="data-ticket-item">
+                <p class="data-ticket-title">Nome Passeggero</p>
+                <p class="data-ticket-text" id="ticket-name">Daniele</p>
+              </li>
+              <li class="data-ticket-item fix">
+                <p class="data-ticket-title">Offerta</p>
+                <p class="data-ticket-text" id="ticket-type">Biglietto Standard</p>
+              </li>
+              <li class="data-ticket-item">
+                <p class="data-ticket-title">Carrozza</p>
+                <p class="data-ticket-text" id="wagon">1</p>
+              </li>
+              <li class="data-ticket-item">
+                <p class="data-ticket-title">Codice CP</p>
+                <p class="data-ticket-text" id="cp-code">10000</p>
+              </li>
+              <li class="data-ticket-item">
+                <p class="data-ticket-title">Costo biglietto</p>
+                <p class="data-ticket-text" id="price">0.00 &euro;</p>
+              </li>
+              
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>
